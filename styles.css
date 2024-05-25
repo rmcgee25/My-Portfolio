@@ -1,15 +1,12 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Courier New';
     margin: 10px;
     padding: 10px;
-    background-color: aquamarine;
+    background-color: rgb(35, 207, 150);
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
     background-color: #333;
 }
 
@@ -17,40 +14,42 @@ nav ul li {
     float: left;
 }
 
-nav ul li a {
+li a{
     display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+    color: rgb(255, 255, 255);
+    text-align: right;
+    padding: 15px 15px;
     text-decoration: none;
+    font-weight: bold;
+    font-size: large;
 }
 
-nav ul li a:hover {
+li a:hover {
     background-color: #111;
 }
 
-#home {
-    padding: 20px;
-    text-align: center;
-}
-
-#home img {
+img {
     max-width: 150px;
     height: auto;
-    border-radius: 50%;
+    border-radius: 25%;
 }
 
-.about, .work, .contact {
+.about{
+    text-align: right;
     padding: 20px;
 }
 
-.projects-grid {
+.work, .contact {
+    padding: 20px;
+}
+
+.projects {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 10px;
 }
 
-.project-thumbnail {
+.projects-thumbnail {
     background-color: #ddd;
     padding: 20px;
     text-align: center;
@@ -62,16 +61,10 @@ form {
     gap: 10px;
 }
 
-form label {
-    margin-top: 10px;
-}
-
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
+    margin-top: 20px;
+    color: black;
     position: fixed;
-    width: 100%;
-    bottom: 0;
+    width: 50%;
 }
