@@ -1,58 +1,103 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    scroll-snap-type: y mandatory; 
+}
 body {
-    font-family: 'Courier New';
-    margin: 10px;
-    padding: 10px;
-    background-color: rgb(35, 207, 150)
+    background-color: #23cf96;
+    font-family: "Orbitron", serif;
+}
+
+h1 {
+    font-size: 50px;
+    background-color: white;
+    padding: 10px 50px 10px 50px;
+    font-family: "New Amsterdam", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 40px;
+}
+
+#navContainer {
+   float: right;
 }
 
 nav ul {
     list-style-type: none;
-    background-color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
     float: left;
 }
 
-li a{
+li a {
     display: block;
-    color: rgb(255, 255, 255);
+    background-color: white;
+    color: black;
     text-align: right;
-    padding: 15px 15px;
+    padding: 10px;
     text-decoration: none;
     font-weight: bold;
     font-size: large;
+    font-size: 20px;
 }
 
 li a:hover {
-    background-color: #111;
+    background-color: white;
 }
 
 img {
-    max-width: 150px;
     height: auto;
     border-radius: 25%;
+    width: 375px;
+    margin-left: 60px;
 }
 
-.about{
-    text-align: right;
-    padding: 20px;
+section {
+    height: 100vh; 
+    scroll-snap-align: start; 
 }
 
-.work, .contact {
-    padding: 20px;
+#home {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 40px;
+   margin-left: 100px;
 }
 
-.projects {
+#about {
+    background-color: #2c8ffa;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
+    gap: 50px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.projects-thumbnail {
-    background-color: #ddd;
-    padding: 20px;
-    text-align: center;
+#aboutOne {
+    background-color: white;
+    grid-column: 1;
+    grid-row: 1;
+    margin: 20px 0 0 20px;
+    padding: 15px;
+}
+
+#aboutTwo {
+    background-color: #23cf96;
+    grid-column: 2;
+    grid-row: 2;
+    padding: 15px;
+}
+
+#aboutThree {
+    background-color: white;
+    grid-column: 3;
+    grid-row: 3;
+    margin: 0 20px 20px 0;
+    padding: 15px;
 }
 
 form {
@@ -61,10 +106,35 @@ form {
     gap: 10px;
 }
 
-footer {
+#contactContainer {
+    background-color: #2c8ffa;
+}
+
+h2 {
+    font-family: "New Amsterdam", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
     text-align: center;
-    margin-top: 20px;
-    color: black;
-    position: fixed;
-    width: 50%;
+    padding-top: 20px;
+}
+
+#webProjects {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+}
+
+#webProjects li a {
+    background-color: white;
+    font-family: "Orbitron", serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px;
+    font-size: 50px;
+}
+
+#webProjects li a:hover {
+    background-color: #2c8ffa;
 }

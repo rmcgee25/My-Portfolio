@@ -6,69 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ramzee V's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Orbitron:wght@400..900&display=swap');
+        </style>
 </head>
 
 <body>
-
+<div id="navContainer">
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Ramzee</a></li>
-            <li><a href="#work">My Work</a></li>
-            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Portfolio</a></li>
+            <li><a href="#contactContainer">Contact</a></li>
         </ul>
     </nav>
+</div>
 
-
-    <div id="home">
-        <h1>Welcome to My Portfolio</h1>
-        <img src="headshot.jpg" alt="A picture of me" width="200" height="300">
-    </div>
-
-    <div id="about" class="about">
-        <h2>About Me</h2>
-        <p>I consider myself as a person who is constantly asking why. I love finding out how things, people, and everything inbetween work.
-            This curiosity has led my life personally and professionally. For the past 5 years I worked the social services industry from as a program manager
-            and teacher. So why the career transition? Because in my 5 years of social work the one thing that remained consistent was the 
-            advancement of tech. Although it was intended to be an advancement it often presented as a problem of accessibility within the communities I
-            served. I can’t help the communities I aim to serve without the knowledge that we need. To make change you have be the change. 
-            Which started with me learning web development. Here lies my proof of change.
-        </p>
-    </div>
-
-    <div class="work">
-        <h2>My Work</h2>
-        <p> <a href="https://github.com/rmcgee25" target="_blank"> Ramzee V GitHub</a></p>
-        <p><a href="https://www.linkedin.com/in/ramzee-mcgee-williams/" target="_blank">LinkedIn</a></p>
-        <div class="projects">
-            <div class="project-thumbnail">Project 1</div>
-            <div class="project-thumbnail">Project 2</div>
-            <div class="project-thumbnail">Project 3</div>
-            <div class="project-thumbnail">Project 4</div>
+    <section id="home">
+        <div class="homeItems">
+            <img src="headshot.jpg" alt="Ramzee V's Headshot">
         </div>
-    </div>
+        <div class="homeItems">
+            <h1>Welcome to my<br>portfolio!  Have<br>a look around<br>and leave me a<br>message!</h1>
+        </div>
+    </section>
 
-    <div class="contact">
-        <h2>Contact Me</h2>
-        <p id="email">Email me: mcgeeramzee@gmail.com</p>
+    <section id="about">
+        <h2>About Me</h2>
+        <div id="aboutOne">
+            <p>Welcome to a space where technology meets purpose. My passion for building websites and apps comes from a place of wanting to make a difference. After years in social service work, I saw how communities—especially marginalized ones—were often overlooked by websites, apps, and software that had the power to address their needs. That’s why I’m learning to code: to create digital tools that heal, empower, and connect.</p>
+        </div>
+        <div id="aboutTwo">
+            <p>As someone who’s experienced and worked alongside those who’ve been underserved, I’m committed to building technology that speaks to us—meeting people where they are and offering what’s been missing. This is more than a portfolio; it’s a reflection of my belief in tech as a tool for positive change.</p>
+        </div>
+        <div id="aboutThree">
+            <p>Well, that’s the hope! This portfolio is a snapshot of my journey toward that goal, showcasing a collection of beginner to intermediate projects created by me.</p>
+        </div>
+        </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <ul id="webProjects"> 
+            <li><a href="https://rmcgee25.github.io/ramzee-mcgeew-jupiter/">Resume Website</a></li>
+            <li><a href="https://rmcgee25.github.io/ramzee-api-portfolio/">API Project</a></li>
+            <li><a href="https://github.com/rmcgee25/ramzee-api-portfolio/blob/main/script.js">Javascript Project</a></li>
+        </ul>
+
+       <!--<ul id="filmProjects">
+            <li>The Love Journal</li>
+        </ul> --> 
+    </section>
+
+    <section id="contactContainer">
+        <h2>Contact Information</h2>
         <form action="submit-form" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
-            <br>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            <br>
             <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea>
-            <br>
             <input type="submit" value="Submit">
         </form>
-    </div>
+
+        <p> <a href="https://github.com/rmcgee25" target="_blank">Ramzee V GitHub</a></p>
+        <p><a href="https://www.linkedin.com/in/ramzee-mcgee-williams/" target="_blank">LinkedIn</a></p>
+    </section>
 
     <footer>
-        <p>Thnak you for visiting my Portfolio</p>
+        <p>Thank you for visiting my Portfolio</p>
     </footer>
-
 
 </body>
 
